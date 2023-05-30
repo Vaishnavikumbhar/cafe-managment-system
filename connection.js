@@ -1,7 +1,7 @@
-const { config } = require('dotenv');
+// const {config} = require("dotenv");
 const mysql = require('mysql');
 
-require('dotnet').config();
+require('dotenv').config();
 
 var connection = mysql.createConnection({
     port:process.env.DB_PORT,
